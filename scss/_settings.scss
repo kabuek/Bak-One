@@ -1,0 +1,55 @@
+%flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+$w: 80%;
+$color: #737373;
+$cw: white;
+$cb: black;
+$bgcol: #1bbc9b;
+
+
+body {
+	background-color: #fff;
+	font-family: 'Lato', san-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	color: $color;
+}
+
+a {
+	font-family: 'Lato', san-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	color: $color;
+	text-decoration: none;
+}
+
+%h2 {
+	padding-bottom: 20px;
+	font-size: 24px;
+}
+
+%h4 {
+	padding-bottom: 20px;
+	font-size: 16px;
+}
+
+.wrap {
+	position: relative;
+	width: $w;
+	margin: 0 auto;
+	padding: 50px 0;
+	text-align: center;
+}
+
+%form {
+	border: 1px solid #bec3c7;
+	font-family: 'Lato', san-serif;
+	font-size: 14px;
+	line-height: 2;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	outline:none;
+}
