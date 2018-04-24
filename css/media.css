@@ -41,13 +41,14 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 680px) {
-	section#top > header.wrap .dropdown {
+	section#top > header.wrap .dropdown_button {
 		display: block;
+		padding-top: 5px;
 	}
 
 	section#top > header.wrap .navigation {
 		z-index: 1;
-		display: block;
+		flex-direction: column;
 		background-color: #1bbc9b;
 		position: absolute;
 		top: 70px;

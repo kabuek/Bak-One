@@ -18,7 +18,7 @@
 					<h4>Lorem ipsum dolor sit.</h4>
 				</div>
 			</div>
-			<button class="dropdown"><i class="fas fa-bars"></i></button>
+			<button class="dropdown_button"><i class="fas fa-bars"></i></button>
 			<ul class="navigation">
 				<li><a class="nav_item" href="#top">home</a></li>
 				<li><a class="nav_item" href="#portfolio">portfolio</a></li>
@@ -38,8 +38,14 @@
 		<div class="wrap">
 			<h2>Portfolio</h2>
 			<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro voluptatibus assumenda aspernatur.</h4>
+			<div class="port-categories">
+				<button id="showall">SHOW ALL</button>
+				<button id="category_1">CATEGORY 1</button>
+				<button id="category_2">CATEGORY 2</button>
+				<button id="category_3">CATEGORY 3</button>
+			</div>
 			<div class="port-items">
-				<div class="item">
+				<div class="item category_1">
 					<a href="#">
 						<img src="img/p1.png" height="170px" width="170px">
 						<div class="filter">
@@ -49,7 +55,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="item">
+				<div class="item category_2">
 					<a href="#">
 						<img src="img/p2.png" height="170px" width="170px">
 						<div class="filter">
@@ -59,7 +65,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="item">
+				<div class="item category_1">
 					<a href="#">
 						<img src="img/p3.png" height="170px" width="170px">
 						<div class="filter">
@@ -69,7 +75,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="item">
+				<div class="item category_3">
 					<a href="#">
 						<img src="img/p4.png" height="170px" width="170px">
 						<div class="filter">
@@ -79,7 +85,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="item">
+				<div class="item category_2">
 					<a href="#">
 						<img src="img/p5.png" height="170px" width="170px">
 						<div class="filter">
@@ -89,7 +95,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="item">
+				<div class="item category_1">
 					<a href="#">
 						<img src="img/p6.png" height="170px" width="170px">
 						<div class="filter">
@@ -99,7 +105,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="item">
+				<div class="item category_3">
 					<a href="#">
 						<img src="img/p1.png" height="170px" width="170px">
 						<div class="filter">
@@ -109,7 +115,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="item">
+				<div class="item category_1">
 					<a href="#">
 						<img src="img/p2.png" height="170px" width="170px">
 						<div class="filter">
@@ -227,27 +233,25 @@
 	</footer>
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<script src="js/scroll.js"></script>
+	<script src="js/script.js"></script>
 	<script>
 		var res = $(".navigation");
-		$(".dropdown").on("click", funk);
-
-		$(document).click(function(e) {
-		  if ($(e.target).closest(res).length || $(e.target).closest('.dropdown').length) return;
-		  res.fadeOut(100);
-		  e.stopPropagation();
-		});
-
-		function funk(){
-		  if(res.css("display") == "none"){
-		    res.fadeIn(100);
-		  }
-		  else{
-		    res.fadeOut(100);
-		  }
-		}
+		$(".dropdown_button").on("click", funk);
+		function funk(){    
+		    if(res.css ("display") == "none"){
+		        res.fadeIn(100);
+		        }
+		        else{
+		            res.fadeOut(100);            
+		        }    
+		    }  
 	</script>
 </body>
 </html>
