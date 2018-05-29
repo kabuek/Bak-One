@@ -48,6 +48,25 @@ section#contacts > .wrap > .info > .mess > input[type="text"], section#contacts 
   outline: none;
 }
 
+.show {
+  display: flex;
+  animation-name: modal;
+  animation-duration: 0.4s;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes modal {
+  from {
+    transform: scale(0);
+  }
+  to {
+    text-transform: scale(1);
+  }
+}
+
 section#top {
   width: 100%;
   position: relative;
@@ -111,6 +130,7 @@ section#top .slogan {
 }
 
 section#top .slogan > .wr {
+  position: relative;
   width: 80%;
   margin: 0 auto;
   padding: 100px 0 120px;
@@ -139,6 +159,7 @@ section#top .slogan > .wr > .more {
   text-transform: uppercase;
   color: white;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 section#top .slogan > .wr > .more:hover {
@@ -408,4 +429,44 @@ footer .wrap > a:hover {
 
 footer .wrap > p {
   vertical-align: center;
+}
+
+#modal {
+  z-index: 3;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#modal > .pair {
+  position: relative;
+  max-width: 300px;
+  margin: auto;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#modal > .pair > p {
+  color: #737373;
+}
+
+#modal > .pair > #close {
+  position: absolute;
+  top: -35px;
+  right: -35px;
+  padding: 5px 17px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(117, 114, 113, 0.8);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#modal > .pair > #close:hover {
+  background-color: rgba(148, 144, 143, 0.8);
 }

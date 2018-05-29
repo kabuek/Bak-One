@@ -53,3 +53,18 @@ a {
 	margin-bottom: 20px;
 	outline:none;
 }
+
+.show {
+	display: flex;
+	animation-name: modal;
+	animation-duration: 0.4s;
+}
+
+.hide {
+	display: none;
+}
+
+@keyframes modal {
+	from{transform: scale(0);}
+	to{text-transform: scale(1)}
+}

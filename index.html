@@ -30,7 +30,7 @@
 			<div class="wr">
 				<h1>Lorem ipsum <span class="bold">dolor</span>.</h1>
 				<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dignissimos pariatur molestias corporis eligendi magni, et eveniet error accusamus aut!</h3>
-				<a class="more" href="#">learn more</a>
+				<a id="modal_btn" class="more">learn more</a>
 			</div>
 		</div>
 	</section>
@@ -232,6 +232,13 @@
 		</div>
 	</footer>
 
+	<div id="modal" class="hide">
+		<div class="pair">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sequi, explicabo tempora minus hic laboriosam, suscipit quasi assumenda repellat, expedita sunt quo! Enim numquam obcaecati quia ut debitis iste voluptas eos consectetur cumque ipsa impedit reprehenderit veniam excepturi, in, ad adipisci sequi qui atque ex nisi dolor voluptatibus nesciunt nulla.</p>
+			<span id="close">&times</span>
+		</div>
+	</div>
+
 
 	
 	<script
@@ -240,7 +247,10 @@
   crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<script src="js/scroll.js"></script>
-	<script src="js/script.js"></script>
+	<script src="js/category__filter.js"></script>
+	<script src="js/modal.js"></script>
+
+
 	<script>
 		var res = $(".navigation");
 		$(".dropdown_button").on("click", funk);

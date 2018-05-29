@@ -69,6 +69,7 @@ section#top {
 		background: url(../img/bg.jpg) no-repeat center -40px / cover;
 
 		&>.wr {
+			position: relative;
 			width: $w;
 			margin: 0 auto;
 			padding: 100px 0 120px;
@@ -96,6 +97,7 @@ section#top {
 				text-transform: uppercase;
 				color: $cw;
 				transition: 0.3s;
+				cursor: pointer;
 			}
 
 			&>.more:hover {
@@ -403,5 +405,41 @@ footer {
 		&>p {
 			vertical-align: center;
 		}
+	}
+}
+
+#modal {
+	z-index: 3;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0, 0.7);
+
+	&>.pair {
+		position: relative;
+		max-width: 300px;
+		margin: auto;
+		padding: 15px;
+		background-color: $cw;
+		border-radius: 10px;
+
+		&>p {color: $color;}
+
+		&>#close {
+			position: absolute;
+			top: -35px;
+			right: -35px;
+			padding: 5px 17px;
+			font-size: 30px;
+			font-weight: bold;
+			color: $cw;
+			background-color: rgba(117,114,113, 0.8);
+			cursor: pointer;
+			border-radius: 50%;
+		}
+
+		&>#close:hover {background-color: rgba(148,144,143, 0.8);}
 	}
 }
